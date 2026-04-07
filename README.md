@@ -1,28 +1,15 @@
-# Bound-Entangled-State
+# Quantum state tomography with gradient descent 
 
-## Installation & Usage
+This repository contains the code required to reproduce the plots from https://arxiv.org/abs/2503.04526  
 
-### Installation via pip
+## Installation and use
 
-If you only need to use the library (without cloning the full repository), you can install it directly from GitHub.
+Install the myenvironment.yml or you can install the libraries by yourself, but be careful with the version of QuTip, in this project qutip==5.0.0 is used.
 
-It is recommended to install it in a new virtual environment:
+```python
+conda env create -f environment.yml
+conda activate applesilicon_gd_qst_env
+```
+The notebooks in the `examples` folder are tutorials on how to do the quantum state tomography with the different methods of gradient descent. 
 
-    pip install -r requirements.txt
-
-Please create a new virtual environment and install these via pip.
-
-
-
-## Tested environment:
-  python 3.11.2
-  
-  numpy==1.26.4
-  
-  qutip==5.0.0a2
-  
-  scipy==1.17.1
-  
-  seaborn==0.13.2
-  
-  torch==2.10.0
+The `data_and_paper-plots` folder contains a Jupyter Notebook (`.ipynb`) that runs the methods used to generate the plots presented in the paper, along with a ZIP file containing the corresponding data.
