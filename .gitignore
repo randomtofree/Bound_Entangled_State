@@ -52,3 +52,30 @@ dmypy.json
 
 # Ignore data contents optionally (if you don't want to sync massive matrices)
 # data/**/*.npy
+# Byte-compiled / optimized files
+qst_tec/__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment directories
+venv/
+ENV/
+env/
+
+# PyCharm settings
+\.idea/
+\.jupyter/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Test and coverage directories
+htmlcov/
+.tox/
+.coverage
+coverage.xml
+
+# data
+*.npz
